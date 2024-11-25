@@ -127,10 +127,10 @@ if [ -e pid ]; then
   kill -9 -$(cat pid) || true
 fi
 
-if  [ ! -x "$(command -v perf)" ]; then
-  echo "perf, perf-stat is not installed"
-  exit 1
-fi
+# if  [ ! -x "$(command -v perf)" ]; then
+#   echo "perf, perf-stat is not installed"
+#   exit 1
+# fi
 
 echo $$ > pid
 
